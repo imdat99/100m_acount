@@ -1,0 +1,10 @@
+export const PATH_PERSONALINFO = "/personal-info";
+export const PATH_HOME = "/";
+export const PATH_NOTFOUND = "/not-found";
+export const PATH_LOGIN = "/login";
+export const PATH_REGISTER = "/register";
+export const PATH_DASHBOARD = "/dashboard";
+export const PATH_SHARING = "/sharing";
+export const PATH_LOGOUT = "/logout";
+export const PATH_SECURITY = "/Security";
+export const PATH_PAYMENTS_AND_SUBSCRIPTIONS = "/payments-and-subscriptions";

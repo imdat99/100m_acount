@@ -1,3 +1,4 @@
+import { PATH_PERSONALINFO, PATH_REGISTER, PATH_SECURITY } from "@/lib/constant";
 import { cn } from "@/lib/utils";
 import {
   FiChevronRight,
@@ -5,6 +6,7 @@ import {
   FiMessageSquare,
   FiSearch,
 } from "react-icons/fi";
+import { Link } from "react-router";
 const cards = [
   {
     header: "Quyền riêng tư và cá nhân hóa",
@@ -14,6 +16,7 @@ const cards = [
     mimg: "",
     footer: "Quản lý dữ liệu và quyền riêng tư của bạn",
     isFullWidth: false,
+    link: PATH_PERSONALINFO
   },
   {
     header: "Chúng tôi có một số đề xuất bảo mật dành cho bạn",
@@ -22,6 +25,7 @@ const cards = [
     mimg: "",
     footer: "Bảo vệ tài khoản của bạn",
     isFullWidth: false,
+    link: PATH_SECURITY
   },
   {
     header: "Chúng tôi có các đề xuất về quyền riêng tư dành cho bạn",
@@ -31,6 +35,7 @@ const cards = [
     mimg: "https://www.gstatic.com/identity/boq/accountsettingsmobile/privacycheckup_initial_with_new_shield_192x192_fcd51bc634485b4693b9b24ae4c32c80.png",
     footer: "Xem các đề xuất (3)",
     isFullWidth: true,
+    link: PATH_REGISTER
   },
 ];
 const Pages = () => {
@@ -74,7 +79,8 @@ const Pages = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {cards.map((card, index) => (
-            <div
+            <Link
+              to={card.link}
               className={cn(
                 "card cursor-pointer flex flex-col",
                 card.isFullWidth ? "md:col-span-2" : ""
@@ -108,11 +114,11 @@ const Pages = () => {
                 </div>
               </div>
               <div className="card-footer px-6 py-2 border-t border-gray-200 hover:bg-gray-50">
-                <a href="#" className="text-blue-600 text-sm font-medium">
+                <p className="text-blue-600 text-sm font-medium">
                   {card.footer}
-                </a>
+                </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

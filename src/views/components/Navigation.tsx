@@ -22,21 +22,21 @@ const menus = [
         title: "Thông tin cá nhân",
         path: PATH_PERSONALINFO,
     },
-    {
-        icon: FiDatabase,
-        title: "Dữ liệu và quyền riêng tư",
-        path: "/data-and-privacy",
-    },
+    // {
+    //     icon: FiDatabase,
+    //     title: "Dữ liệu và quyền riêng tư",
+    //     path: "/data-and-privacy",
+    // },
     {
         icon: FiLock,
         title: "Bảo mật",
         path: PATH_SECURITY,
     },
-    {
-        icon: FiUsers,
-        title: "Mọi người và chia sẻ",
-        path: PATH_SHARING,
-    },
+    // {
+    //     icon: FiUsers,
+    //     title: "Mọi người và chia sẻ",
+    //     path: PATH_SHARING,
+    // },
     {
         icon: FiCreditCard,
         title: "Thanh toán và gói thuê bao",
@@ -59,7 +59,7 @@ const Navigation = () => {
         </div>
       </div>
       <div className="fixed">
-        <aside className="desktop-sidebar w-[280px] overflow-y-auto py-2">
+        <aside className="desktop-sidebar w-[280px] overflow-y-auto py-4">
           <nav>
             <ul className="cursor-pointer font-medium text-sm">
                 {menus.map((menu, index) => (

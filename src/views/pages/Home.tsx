@@ -5,6 +5,8 @@ import {
   FiMessageSquare,
   FiSearch,
 } from "react-icons/fi";
+import FallbackComponent from "../components/Fallback";
+import InputNumber from "../components/InputNumber";
 const cards = [
   {
     header: "Quyền riêng tư và cá nhân hóa",
@@ -36,13 +38,15 @@ const cards = [
 const Pages = () => {
   return (
     <>
+    <FallbackComponent isLoading={true} type="avatar" />
+    <InputNumber/>
         <div className="text-center mb-6">
           <div className="mx-auto md:my-8 bg-purple-700 text-white font-bold text-6xl rounded-full h-24 w-24 flex items-center justify-center">
             D
           </div>
           <h1 className="text-2xl md:text-3xl font-medium mb-4">Xin chào, Duy!</h1>
           <p className="text-gray-600 mb-6">
-            Quản lý thông tin, quyền riêng tư và chế độ bảo mật hiệu quả cho bạn
+            Quản lý thông tin, quyền riêng tư và chế độ bảo mật cho tài khoản của bạn
           </p>
         </div>
         {/* Search box */}

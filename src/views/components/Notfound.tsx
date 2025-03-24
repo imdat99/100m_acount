@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 
 const Notfound = () => {
@@ -18,7 +17,7 @@ const Notfound = () => {
           </p>
           <Link
             to="/"
-            className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
           >
             Take me there!
           </Link>
@@ -63,8 +62,8 @@ const Notfound = () => {
               </g>
             </svg>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="relative w-24 h-24 bg-indigo-500 rounded-full flex items-center justify-center">
-                <div className="absolute w-16 h-16 bg-indigo-400 rounded-full animate-ping" />
+              <div className="relative w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
+                <div className="absolute w-16 h-16 bg-blue-400 rounded-full animate-ping" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-12 w-12 text-white"
